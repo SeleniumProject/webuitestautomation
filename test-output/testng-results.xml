@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-01-12T08:47:49Z" name="Default suite" finished-at="2024-01-12T08:47:51Z" duration-ms="2090">
+    <groups>
+    </groups>
+    <test started-at="2024-01-12T08:47:49Z" name="Default test" finished-at="2024-01-12T08:47:51Z" duration-ms="2090">
+      <class name="com.bb.tests.RegisterTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.bb.tests.RegisterTest@4671115f]" started-at="2024-01-12T14:17:45Z" name="setUp" finished-at="2024-01-12T14:17:49Z" duration-ms="3783" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verify_the_register_functionality_By_Entering_different_password(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bb.tests.RegisterTest@4671115f]" started-at="2024-01-12T14:17:49Z" name="verify_the_register_functionality_By_Entering_different_password" data-provider="differentPasswords" finished-at="2024-01-12T14:17:51Z" duration-ms="2072" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[srini]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[rap]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[srinirapw21@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[000000]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[123123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_the_register_functionality_By_Entering_different_password -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.bb.tests.RegisterTest@4671115f]" started-at="2024-01-12T14:17:51Z" name="closeBrowser" finished-at="2024-01-12T14:17:51Z" duration-ms="208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.bb.tests.RegisterTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

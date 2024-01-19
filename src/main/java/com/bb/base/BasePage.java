@@ -21,5 +21,6 @@ public class BasePage {
 	
 	public void close() {
 		driver.close();
+		 
 	}
 }

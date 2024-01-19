@@ -21,7 +21,7 @@ public class RegisterTest extends BasePage {
 	
 	  @DataProvider (name = "register")
     public Object[][] validLogin(){
-	 return new Object[][] {{"Demo Web Shop","Demo Web Shop. Register","Ramya","kumari","ramya135625886@gmail.com","testing1234","testing1234"}};
+	 return new Object[][] {{"Demo Web Shop","Demo Web Shop. Register","Ramya","kumari","ramya13636586@gmail.com","testing1234","testing1234"}};
     }
 
 	

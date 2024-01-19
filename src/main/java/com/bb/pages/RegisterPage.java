@@ -12,7 +12,6 @@ public class RegisterPage {
 		this.driver=driver;
 	}
 
-	
 	By regisetrlink= By.className("ico-register");
 	By maleRadio = By.id("gender-male");
 	By fname = By.id("FirstName");
@@ -22,6 +21,7 @@ public class RegisterPage {
 	By cpass= By.id("ConfirmPassword");
 	By regiserBtn = By.id("register-button");
 	By msg = By.className("result");
+	By logoutLink= By.className("ico-logout");
 	By errorMail  = By.className("field-validation-error");
 	By fNameErrorMsg =By.xpath("(//*[@class=\"field-validation-error\"])[1]");
 	By lNameErrorMsg =By.xpath("(//*[@class=\"field-validation-error\"])[2]");
@@ -29,8 +29,6 @@ public class RegisterPage {
 	By passErrorMsg =By.xpath("(//*[@class=\"field-validation-error\"])[4]");
 	By cPassErrorMsg =By.xpath("(//*[@class=\"field-validation-error\"])[5]");
 	By differentPassErrorMsg = By.className("field-validation-error");
-	
-	
 	
 	public void clickOnRegsisterLink() {
 		driver.findElement(regisetrlink).click();
@@ -67,6 +65,10 @@ public class RegisterPage {
 		 * System.out.println("Not registered");
 		 */
 	}
+	public void clickOnLogout() {
+		driver.findElement(logoutLink).click();
+		
+	}
 	public void invalidMailMsg() {
 		String emailErrorMsg = driver.findElement(errorMail).getText();
 		Assert.assertEquals(emailErrorMsg, "Wrong email");
@@ -96,4 +98,5 @@ public class RegisterPage {
 		String diffpassErrorMsg= driver.findElement(differentPassErrorMsg).getText();
 		Assert.assertEquals(diffpassErrorMsg, "The password and confirmation password do not match.");
 	}
+	
 }

@@ -7,7 +7,6 @@
         <methods>
           <include name="setUp"/>
           <include name="verify_the_register_functionality_By_click_on_Resgister_Butoon_without_Entering_The_data"/>
-          <include name="closeBrowser"/>
         </methods>
       </class> <!-- com.bb.tests.RegisterTest -->
     </classes>

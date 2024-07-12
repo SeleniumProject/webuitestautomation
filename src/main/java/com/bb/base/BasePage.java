@@ -13,7 +13,9 @@ public class BasePage {
 	public void invokeBrowser() {
 		// browser driver setup
 		
-		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\drivers\\chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\drivers\\chromedriver");
+
 		//WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		driver.get("https://demowebshop.tricentis.com/");

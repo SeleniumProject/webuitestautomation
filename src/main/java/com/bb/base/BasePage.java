@@ -3,6 +3,8 @@ package com.bb.base;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class BasePage {
 	
 	public static WebDriver driver;
@@ -12,7 +14,7 @@ public class BasePage {
 		// browser driver setup
 		
 		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\drivers\\chromedriver.exe");
-		
+		//WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		driver.get("https://demowebshop.tricentis.com/");
 		driver.manage().window().maximize();
